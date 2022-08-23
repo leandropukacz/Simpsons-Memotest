@@ -1,0 +1,67 @@
+
+.carta{
+    margin-left: 100px;
+    width: 1000px;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+.tarjeta {
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: absolute;
+    transform: rotateY(180deg);
+    z-index: 2;
+    transition: all 0.3s linear;
+
+}
+.tarjetaBack{
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: absolute;
+    transition: all 0.3s linear;
+    
+}
+.tarjeta img, .tarjetaBack img{
+    width: 100px;
+    height: 100px;
+}
+.fila1, .fila2{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 150px;
+    margin-bottom: 15px;
+    transform-style: preserve-3d;
+}
+
+.tarjeta, .tarjetaBack{
+    backface-visibility: hidden;
+    
+}
+.tarjetaClick{
+    transition: all 0.3s linear;
+
+    transform: rotateY(180deg);
+}
+
+#boton-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+}
+
+.boton-reinicio{    
+    display: none;        
+
+}
+.boton-reinicio-activa{
+    display: block;
+}
+
+
